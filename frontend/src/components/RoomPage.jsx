@@ -21,7 +21,7 @@ const RoomPage = () => {
     const handleSubmit = () => {
     const newRoom = {
         id: Math.floor(1000 + Math.random() * 9000).toString(),
-        duration,
+        duration, 
         status: 'Upcoming',
         startTime: 'Scheduled',
     };
@@ -102,7 +102,7 @@ const RoomPage = () => {
                 Paste Paragraph:
             </label>
             <textarea
-                value={localParagraph}
+                value={paragraph}
                 onChange={(e) => setLocalParagraph(e.target.value)}
                 className="w-full h-40 px-4 py-2 rounded-lg border bg-gray-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 rows="4"
